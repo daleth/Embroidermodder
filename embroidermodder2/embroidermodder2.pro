@@ -14,13 +14,14 @@ deploy {
     CONFIG += debug #This adds -g to the compiler flags so valgrind can locate the exact line.
     CONFIG -= release
 }
-
+target.path = $$(PREFIX)
+23
+INSTALLS += target
 ICON = embroidermodder2.icns
 
 TARGET = embroidermodder2
 
-target.path = $$(PREFIX)
-INSTALLS += target
+
 DEFINES += INSTALL_PREFIX=$$(PREFIX)
 
 QT += opengl
