@@ -19,6 +19,10 @@ ICON = embroidermodder2.icns
 
 TARGET = embroidermodder2
 
+target.path = $$(PREFIX)
+INSTALLS += target
+DEFINES += INSTALL_PREFIX=$$(PREFIX)
+
 QT += opengl
 QT += script scripttools
 
@@ -312,7 +316,11 @@ win32 {
 ###########################################################################################
 
 ###########################################################################################
-# Qt5 Shared Deployment - MXE Cross Compile ( i686-w64-mingw32 )                          #
+# Qt5 Shared Deployment - MXE Cross Compile ( i686-w64target.path = $$(PREFIX)
+INSTALLS += target
+DEFINES += INSTALL_PREFIX=$$(PREFIX)-mtarget.path = $$(PREFIX)
+INSTALLS += target
+DEFINES += INSTALL_PREFIX=$$(PREFIX)ingw32 )                          #
 ###########################################################################################
 # embroidermodder2.exe   #                                                                #
 # icudt##.dll            # /path/to/mxe/usr/i686-w64-mingw32.shared/lib                   #
